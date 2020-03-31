@@ -5,8 +5,8 @@ import Marker from './marker';
 class SimpleMap extends Component {
 
   static defaultProps = {
-    center: [48.884211, 2.34689],
-    zoom: 14,
+    center: [48.8566, 2.3522],
+    zoom: 12,
   };
 
 

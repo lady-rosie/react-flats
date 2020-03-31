@@ -36,8 +36,10 @@ body {
 }
 
 .marker {
-  height: 20px;
-  width: 20px;
-  background-color: red;
-  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  background-image: url('https://i.ya-webdesign.com/images/pointer-transparent-map-1.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }

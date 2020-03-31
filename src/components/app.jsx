@@ -9,14 +9,20 @@ class App extends Component {
 
     this.state = {
       flats: flats,
-      selectedFlat: flats[3]
+      selectedFlat: flats[0]
     };
+  };
+
+  selectFlat = (index) => {
+    this.setState({
+      selectedFlat: flats[index]
+    });
   }
 
   render () {
     return (
       <div>
-        <FlatList flats={ this.state.flats } />
+        <FlatList flats={this.state.flats} selectFlat={this.selectFlat} />
         <div className="map-container">
           <SimpleMap selectedFlat={this.state.selectedFlat} />
         </div>
